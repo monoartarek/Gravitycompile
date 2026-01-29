@@ -1,0 +1,122 @@
+/* .app-preview {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #9b5cff 100%);
+  overflow: hidden;
+} */
+
+.app-preview h1 {
+  font-size: 40px;
+  color: #6a00ff;
+  font-weight: 700;
+}
+.app-preview {
+  padding: 20px 10px;
+  text-align: center;
+  overflow: hidden;
+
+  background:
+    /* Top lighter -> Bottom darker */
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.60) 40%,
+      rgba(155, 92, 255, 0.85) 100%
+    ),
+
+    /* More noticeable columns (left) */
+    repeating-linear-gradient(
+      to right,
+      rgba(106, 0, 255, 0.22) 0px,
+      rgba(106, 0, 255, 0.22) 30px,
+      rgba(106, 0, 255, 0.08) 60px,
+      rgba(106, 0, 255, 0.08) 90px
+    ),
+
+    /* More noticeable columns (right) */
+    repeating-linear-gradient(
+      to left,
+      rgba(155, 92, 255, 0.18) 0px,
+      rgba(155, 92, 255, 0.18) 30px,
+      rgba(155, 92, 255, 0.08) 60px,
+      rgba(155, 92, 255, 0.08) 90px
+    ),
+
+    /* Base gradient */
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #4f2b88 100%
+    );
+}
+
+p.subtitle {
+  max-width: 600px;
+  margin: 15px auto 60px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.preview-container {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  position: absolute;
+  transition: transform 0.8s ease, opacity 0.6s ease;
+}
+
+
+.phone img {
+  width: 180px;
+  border-radius: 35px;
+}
+
+/* Active center image */
+.phone.active img {
+  width: 230px;
+}
+
+/* Navigation */
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  width: 55px;
+  height: 55px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 26px;
+  background: #fff;
+  color: #6a00ff;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.nav-buttons button:hover {
+  background: #6a00ff;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .preview-container {
+    height: 480px;
+  }
+
+  .phone img {
+    /* padding-top:40px; */
+    width: 200px;
+  }
+
+  .phone.active img {
+    width: 230px;
+  }
+}

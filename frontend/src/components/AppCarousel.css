@@ -1,0 +1,80 @@
+.carousel-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.carousel-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Viewport */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Moving track */
+.carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll-left 50s linear infinite;
+}
+
+/* Logo + Name box */
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100px;
+  height: 120px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.app-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Seamless animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 70px;
+    height: 90px;
+  }
+  .carousel-item img {
+    width: 50px;
+    height: 50px;
+  }
+  .app-name {
+    font-size: 0.8rem;
+  }
+}

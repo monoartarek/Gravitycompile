@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contract-container{
+    height: 4.5rem;
+    width: max;
+    background: linear-gradient(
+    142deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(110, 11, 156, 1) 61%,
+    rgba(156, 151, 151, 1) 100%
+  );
+}

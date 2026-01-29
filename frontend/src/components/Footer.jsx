@@ -1,0 +1,54 @@
+import React from "react";
+import "./Footer.css";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+
+        {/* Company Section */}
+        <div className="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/AboutUs">About Us</a></li>
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">App Pricing</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        {/* Reach Us Section */}
+        <div className="footer-column">
+          <h3>Reach us at</h3>
+          <p>📧 gravitycompile@gmail.com</p>
+          <p>📞 +880 1568895635</p>
+        </div>
+
+        {/* Office Section */}
+        <div className="footer-column">
+          <h3>Office</h3>
+          <p>
+            Chanmari,Charkamlapur,<br />
+            Faridpur shadar<br />
+            Faridpur,Dhaka
+          </p>
+        </div>
+
+      </div>
+
+      {/* Bottom Copyright */}
+      <div className="footer-bottom">
+        © {new Date().getFullYear()} Gravity Compile. All rights reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+

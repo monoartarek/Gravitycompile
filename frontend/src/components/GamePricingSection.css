@@ -1,0 +1,132 @@
+/* ===============================
+   WRAPPER
+================================ */
+.game-pricing-wrapper {
+  padding: 3rem 1rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;  /* stack header + card */
+  align-items: center;
+}
+
+/* Header */
+.game-pricing-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* ===============================
+   MAIN CARD
+================================ */
+.game-pricing-section {
+  display: flex;
+  flex-direction: row;  /* left image, right info */
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7873f5, #ff6ec4);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+}
+
+/* Hover effect for desktop */
+@media (hover: hover) {
+  .game-pricing-section:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* ===============================
+   IMAGE (LEFT)
+================================ */
+.game-pricing-image {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-pricing-image img {
+  width: 100%;
+  max-height: 220px;
+}
+
+/* ===============================
+   INFO (RIGHT)
+================================ */
+.game-pricing-info {
+  flex: 1;
+}
+
+.game-pricing-info h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.game-pricing-info p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.start-button {
+  margin: 1rem 0;
+  padding: 0.65rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ffffff;
+  color: #7873f5;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.start-button:hover {
+  background: #ffddf0;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   NOTE
+================================ */
+.note {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-top: 0.6rem;
+}
+
+/* ===============================
+   RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 768px) {
+  .game-pricing-section {
+    flex-direction: column; /* stack vertically */
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .game-pricing-image {
+    flex: none;
+  }
+
+  .game-pricing-image img {
+    max-height: 180px;
+  }
+
+  .start-button {
+    align-self: center;
+  }
+}

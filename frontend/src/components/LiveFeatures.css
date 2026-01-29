@@ -1,0 +1,99 @@
+/* SECTION */
+.gc-live-feature-section {
+  padding: 80px 16px;
+  color: #000;
+}
+
+/* HEADER */
+.gc-live-feature-header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+/* CONTENT BLOCK (DESKTOP) */
+.gc-live-feature-content {
+  max-width: 900px;
+  margin: 0 auto 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* DESKTOP REVERSE */
+.gc-live-feature-content.gc-reverse {
+  direction: rtl;
+}
+
+.gc-live-feature-content.gc-reverse > * {
+  direction: ltr;
+}
+
+/* IMAGE */
+.gc-live-feature-image {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.gc-live-feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TEXT */
+.gc-live-feature-about h6 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.gc-live-feature-about p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* LIST */
+.gc-live-feature-about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gc-live-feature-about li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+}
+
+.gc-live-feature-about li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #6b6bff;
+}
+
+/* 📱 MOBILE – IMAGE FIRST, TEXT SECOND (ALWAYS) */
+@media (max-width: 900px) {
+  .gc-live-feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* disable reverse on mobile */
+  .gc-live-feature-content.gc-reverse {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gc-live-feature-header {
+    font-size: 26px;
+  }
+
+  .gc-live-feature-about p {
+    font-size: 14px;
+  }
+}
