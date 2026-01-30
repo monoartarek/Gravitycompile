@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import talk_to_expert
+from .views import TalkToExpertCreateView
 
 urlpatterns = [
-    path('talk-to-expert/', talk_to_expert),
+    path("talk-to-expert/", TalkToExpertCreateView.as_view()),
 ]
