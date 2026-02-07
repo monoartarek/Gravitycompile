@@ -174,7 +174,7 @@ a {
 .mobile-link {
   font-size: 24px;
   color: #fff;
-  font-family: cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .mobile-link:hover {
@@ -219,7 +219,7 @@ a {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.199);
   }
   .nav-link{
-    font-family: cursive;
+    font-family: "Roboto", sans-serif;
   }
   .nav-left .brand {
     font-size: 1.5rem;
