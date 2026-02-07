@@ -92,7 +92,7 @@
 
 .form-group textarea {
   height: 90px;
-  resize: none;
+  resize: none;;
 }
 
 .submit-btn {
