@@ -14,6 +14,7 @@ import ContactUs from "./pages/ContactUs";
 import WhatsAppChat from "./components/WhatsAppChat";
 import TermsAndConditions from "./components/TermsAndConditions";
 import FAQ from "./components/FAQ";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/faqs" element={<FAQ />} />
+        <Route path="/blogs" element={<Blog />} />
         
       </Routes>
       <WhatsAppChat />
