@@ -7,7 +7,7 @@ const GravitySection = () => {
     <section className="gravity-section">
       {/* Header */}
       <h2 className="gravity-header">
-        Gravity Compile Technology - Built from Experience
+        Piki Live Technology - Built from Experience
       </h2>
 
       {/* Content: Image + Description */}
@@ -17,7 +17,7 @@ const GravitySection = () => {
         </div>
         <div className="gravity-about">
           <p>
-            Gravity-Compile Technology leverages years of experience to deliver
+            PikiLive Technology leverages years of experience to deliver
             high-performance solutions. Designed for efficiency and reliability,
             it ensures seamless integration into any environment. 
              vitae nulla, corporis mollitia distinctio recusandae velit!

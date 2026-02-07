@@ -5,11 +5,7 @@
 }
 
 .expert-overlay {
-  background: linear-gradient(
-    90deg,
-    rgba(10, 10, 60, 0.85),
-    rgba(10, 10, 60, 0.65)
-  );
+ background: linear-gradient(135deg, #00093f, #57066d);
   border-radius: 20px;
   max-width: 1200px;
   margin: auto;
@@ -33,10 +29,11 @@
   margin-bottom: 10px;
 }
 
-.subtitle {
+.subtitle3 {
   font-size: 15px;
   margin-bottom: 20px;
   opacity: 0.9;
+  color: white;
 }
 
 .expert-list {
@@ -61,7 +58,7 @@
 /* Form */
 .expert-form {
   flex: 1;
-  background: #fff;
+  background: #ffffff11;
   border-radius: 14px;
   padding: 30px;
 }
@@ -81,6 +78,7 @@
 .form-group label {
   font-size: 13px;
   margin-bottom: 6px;
+  color: white;
 }
 
 .form-group input,
@@ -109,7 +107,7 @@
 }
 
 .submit-btn:hover {
-  background: #174ec2;
+  background: #4c0296fa;
 }
 
 /* Responsive */

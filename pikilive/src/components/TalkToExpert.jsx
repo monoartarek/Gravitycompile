@@ -123,7 +123,7 @@ const TalkToExpert = () => {
           {/* Left */}
           <div className="expert-left">
             <h2>Talk to an expert</h2>
-            <p className="subtitle">
+            <p className="subtitle3">
               Fill the form and get free consultation
             </p>
 
