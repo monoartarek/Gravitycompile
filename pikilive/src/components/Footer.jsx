@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,7 +17,8 @@ const Footer = () => {
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            {/* <li><a href="#">Terms & Conditions</a></li> */}
+            <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><a href="/contact-us">Contact Us</a></li>
           </ul>
         </div>
@@ -24,8 +26,8 @@ const Footer = () => {
         {/* Reach Us Section */}
         <div className="footer-column">
           <h3>Reach us at</h3>
-          <p>📧 gravitycompile@gmail.com</p>
-          <p>📞 +880 1568895635</p>
+          <p>📧 pikilive@gmail.com</p>
+          <p>📞 +880 1775215693</p>
         </div>
 
         {/* Office Section */}
@@ -42,7 +44,7 @@ const Footer = () => {
 
       {/* Bottom Copyright */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Gravity Compile. All rights reserved.
+        © {new Date().getFullYear()} PikiLive. All rights reserved.
       </div>
     </footer>
   );

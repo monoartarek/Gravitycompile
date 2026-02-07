@@ -12,6 +12,7 @@ import DownloadApp from "./pages/DownloadApp";
 import PlansPricing from "./pages/PlansPricing";
 import ContactUs from "./pages/ContactUs";
 import WhatsAppChat from "./components/WhatsAppChat";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/download-app" element={<DownloadApp />} />
         <Route path="/plans-pricing" element={<PlansPricing />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         
         
       </Routes>
