@@ -2,15 +2,12 @@
 // ====================================================================
 //this is copied form Hero.jsx and the css is used from Hero.css 
 // =================================================================
-
-
-
-
 // import heroImage from "../assets/others_image/hero_pricing.webp";
 
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import heroPreview from "../assets/others_image/hero_pricing.webp";
+import {Link} from "react-router-dom";
 
 export default function Hero() {
   const fullText = "Pricing & Plans...";
@@ -61,7 +58,9 @@ export default function Hero() {
           <p>
             we offer flexible pricing options whether you want to start your own live streaming platform with full ownership or with a rental plan
           </p>
+          <Link to="/contact-us">
           <button className="hero-btn">Contact Us</button>
+          </Link>
         </div>
 
         {/* IMAGE */}

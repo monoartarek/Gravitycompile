@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 import heroPreview from "../assets/others_image/Home.png";
+import { Link } from "react-router-dom";
 
 
 export default function Hero() {
@@ -52,10 +53,10 @@ export default function Hero() {
             agency, and earnings — all under your brand. PikiLive app Price 3000$ with 100 animations.<br />
             - PikiLive Team
           </p>
-          <link ></link>
-          <button className="hero-btn">
-            Contact Us
-          </button>
+      
+          <Link to="/contact-us">
+            <button className="hero-btn">Contact Us</button>
+          </Link>
         </div>
 
         <div className="hero-image">

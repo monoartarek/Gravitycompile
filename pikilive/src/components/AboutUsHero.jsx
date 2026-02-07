@@ -1,40 +1,8 @@
-
-// ====================================================================
-//this is copied form Hero.jsx and the css is used from Hero.css 
-// =================================================================
-
-
-
-// import "./Hero.css";
-// import heroImage from "../assets/others_image/hero_about.webp";
-
-// function Hero() {
-//   return (
-//     <section className="hero">
-//       <div className="hero-content">
-//         <h1>About Us</h1>
-//         <p>
-//         App development company for Audio & Video Live Streaming Solution,
-//         Short Video App, 1-on-1 Video Call App.
-//         </p>
-//         <button>Contact Us</button>
-//       </div>
-
-//       <div className="hero-image">
-        
-
-//           <img src={heroImage} alt="Hero" />
-
-        
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Hero;
 import React, { useState, useEffect } from "react";
 import "./AboutUsHero.css";
 import heroPreview from "../assets/others_image/hero_about.webp";
+import { Link } from "react-router-dom";
+
 
 export default function Hero() {
   const fullText = "About Us...";
@@ -86,7 +54,9 @@ export default function Hero() {
             or own the full source code. Full control over your app, hosts,
             agency, and earnings — all under your brand.
           </p>
-          <button className="hero-btn">Contact Us</button>
+          <Link to="/contact-us">
+            <button className="hero-btn">Contact Us</button>
+          </Link>
         </div>
 
         {/* IMAGE */}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import heroPreview from "../assets/others_image/hero_download.webp";
+import {Link} from "react-router-dom";
 
 export default function Hero() {
   const fullText = "For a download...";
@@ -51,7 +52,9 @@ export default function Hero() {
           <p>
             open your smartphone's default camera app and point it at the code without needing to take a picture
           </p>
-          <button className="hero-btn">Contact Us</button>
+          <Link to="/contact-us">
+            <button className="hero-btn">Contact Us</button>
+          </Link>
         </div>
 
         {/* IMAGE */}
