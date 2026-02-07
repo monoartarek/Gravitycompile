@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,7 +48,7 @@ a {
 
 /* ===== LEFT ===== */
 .nav-left .brand {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
 }
@@ -70,7 +72,7 @@ a {
   border-radius: 999px;
   color: #fff;
   transition: all 0.3s ease;
-  font-family: cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-link:hover {
@@ -104,14 +106,19 @@ a {
 
 .arrow-circle {
   width: 30px;
-  height: 25px;
+  height: 30px;
   border-radius: 50%;
-  background: #7c3aed;
+  background-color: #4f076e;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(273,73%,15%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(280,65%,25%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(282,39%,47%,1) 0, transparent 50%);
   color: #fff;
+  padding-bottom:5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -201,5 +208,8 @@ a {
   }
   .nav-link{
     font-family: cursive;
+  }
+  .nav-left .brand {
+    font-size: 1.5rem;
   }
 }

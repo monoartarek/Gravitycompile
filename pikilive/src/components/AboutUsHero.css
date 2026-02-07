@@ -8,12 +8,11 @@
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-  background: linear-gradient(
-    142deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(110, 11, 156, 1) 61%,
-    rgba(156, 151, 151, 1) 100%
-  );
+background-color: #0b040e;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(273,73%,15%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(280,65%,25%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(282,39%,47%,1) 0, transparent 50%);
   display: flex;
   justify-content: center;
   align-items: center;

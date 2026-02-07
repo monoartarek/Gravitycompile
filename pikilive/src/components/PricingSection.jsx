@@ -24,7 +24,7 @@ export default function PricingSection() {
 
           <button className="cta-btn">Start Now</button>
 
-          <div className="features">
+          <div className="features1">
             <h4>Includes</h4>
             <ul>
               <li>✔ Android & iOS App Publish</li>
@@ -58,7 +58,7 @@ export default function PricingSection() {
 
           <button className="cta-btn">Contact Sales</button>
 
-          <div className="features">
+          <div className="features1">
             <h4>Includes</h4>
             <ul>
               <li>✔ Lifetime App Ownership</li>

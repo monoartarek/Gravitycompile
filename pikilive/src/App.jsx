@@ -23,6 +23,7 @@ function App() {
         <Route path="/plans-pricing" element={<PlansPricing />} />
         <Route path="/contact-us" element={<ContactUs />} />
         
+        
       </Routes>
       <WhatsAppChat />
     </BrowserRouter>

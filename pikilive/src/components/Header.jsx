@@ -14,7 +14,7 @@ export default function HeroWithHeader() {
 
   const currentPath = window.location.pathname;
 
-  // 🔥 SCROLL DETECTION (FIX)
+  //  SCROLL DETECTION (FIX)
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -28,7 +28,7 @@ export default function HeroWithHeader() {
     <header className="hero-header">
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-left">
-          <a href="/" className="brand">GC</a>
+          <a href="/" className="brand">PIKILIVE</a>
         </div>
 
         <div className="nav-center">
