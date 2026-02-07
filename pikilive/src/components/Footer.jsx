@@ -14,10 +14,9 @@ const Footer = () => {
             <li><a href="/about-us">About Us</a></li>
             <li><a href="/download-app">Download App</a></li>
             <li><a href="/plans-pricing">App Pricing</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><Link to="/faqs">FAQs</Link></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            {/* <li><a href="#">Terms & Conditions</a></li> */}
             <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><a href="/contact-us">Contact Us</a></li>
           </ul>
