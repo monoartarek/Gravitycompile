@@ -3,6 +3,7 @@ import "./LiveCards.css";
 
 import videoPhone from "../assets/others_image/liveCard1.webp";
 import audioPhone from "../assets/others_image/liveCard2.webp";
+import { Link } from "react-router-dom";  
 
 export default function LiveCards() {
   const [activeCard, setActiveCard] = useState("video");
@@ -27,7 +28,9 @@ export default function LiveCards() {
               <li>Esports Streaming</li>
               <li>Education</li>
             </ul>
+            <Link to="/contact-us">
             <button>Launch Now</button>
+            </Link>
           </div>
 
           {activeCard === "video" && (
@@ -53,7 +56,9 @@ export default function LiveCards() {
               <li>PK Battles</li>
               <li>Multi-seat Rooms</li>
             </ul>
-            <button>Launch Now</button>
+            <Link to="/contact-us">
+              <button>Launch Now</button>
+            </Link>
           </div>
 
           {activeCard === "audio" && (

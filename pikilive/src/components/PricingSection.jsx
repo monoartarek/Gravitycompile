@@ -1,5 +1,6 @@
 import React from "react";
 import "./PricingSection.css";
+import { Link } from "react-router-dom";
 
 export default function PricingSection() {
   return (
@@ -22,7 +23,9 @@ export default function PricingSection() {
             </p>
           </div>
 
-          <button className="cta-btn">Start Now</button>
+          <Link to="/contact-us">
+            <button className="cta-btn">Start Now</button>
+          </Link>
 
           <div className="features1">
             <h4>Includes</h4>
@@ -56,7 +59,9 @@ export default function PricingSection() {
             <p className="custom">Custom Pricing Based on Your Need</p>
           </div>
 
-          <button className="cta-btn">Contact Sales</button>
+          <Link to="/contact-us">
+            <button className="cta-btn">Contact Sales</button>
+          </Link>
 
           <div className="features1">
             <h4>Includes</h4>

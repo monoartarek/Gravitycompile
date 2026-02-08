@@ -50,8 +50,7 @@ export default function Hero() {
           <p>
             Get a complete live streaming app like Bigo on a $1,000/month rental
             or own the full source code. Full control over your app, hosts,
-            agency, and earnings — all under your brand. PikiLive app Price 3000$ with 100 animations.<br />
-            - PikiLive Team
+            agency, and earnings - all under your brand. PikiLive app Price 3000$ with 100 animations.<br />
           </p>
       
           <Link to="/contact-us">
