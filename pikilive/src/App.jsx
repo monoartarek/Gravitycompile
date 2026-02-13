@@ -15,6 +15,7 @@ import WhatsAppChat from "./components/WhatsAppChat";
 import TermsAndConditions from "./components/TermsAndConditions";
 import FAQ from "./components/FAQ";
 import Blog from "./components/Blog";
+// import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/faqs" element={<FAQ />} />
         <Route path="/blogs" element={<Blog />} />
+        {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} /> */}
         
       </Routes>
       <WhatsAppChat />

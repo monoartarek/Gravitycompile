@@ -65,14 +65,14 @@ Each platform offers unique engagement features, monetization options, and audie
   },
   {
     id: 5,
-    title: "Top Live Streaming Apps in India 2025",
-    tags: ["India", "Local Trends", "Streaming"],
+    title: "Top Live Streaming Apps in Bangladesh 2025",
+    tags: ["Bangladesh", "Local Trends", "Streaming"],
     summary:
-      "Explore the most popular live streaming apps in India and their market strategies.",
-    author: "India Tech Team",
+      "Explore the most popular live streaming apps in Bangladesh and their market strategies.",
+    author: "Bangladesh Tech Team",
     date: "February 5, 2025",
     readTime: "5 min read",
-    content: `Local apps like ShareChat Live, Roposo, and Josh Live are dominating the Indian market.
+    content: `Local apps like ShareChat Live, Roposo, and Josh Live are dominating the Bangladesh market.
 They focus on regional content, influencer engagement, and gamification features.`,
   },
 ];

@@ -16,7 +16,7 @@ const Footer = () => {
             <li><a href="/plans-pricing">App Pricing</a></li>
             <li><Link to="/faqs">FAQs</Link></li>
             <li><a href="/blogs">Blogs</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            {/* <li><a href="/privacy-policy">Privacy Policy</a></li> */}
             <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><a href="/contact-us">Contact Us</a></li>
           </ul>
@@ -26,14 +26,14 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Reach us at</h3>
           <p>📧 pikilive@gmail.com</p>
-          <p>📞 +880 1775215693</p>
+          <p>📞 +96877035634</p>
         </div>
 
         {/* Office Section */}
         <div className="footer-column">
           <h3>Office</h3>
           <p>
-            Chanmari,Charkamlapur,<br />
+            Charkamlapur,<br />
             Faridpur shadar<br />
             Faridpur,Dhaka
           </p>

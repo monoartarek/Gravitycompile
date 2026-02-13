@@ -30,7 +30,7 @@ export default function PricingSection() {
           <div className="features1">
             <h4>Includes</h4>
             <ul>
-              <li>✔ Android & iOS App Publish</li>
+              <li>✔ Android App Publish</li>
               <li>✔ 70 Gifts, 100 Frames & 20 Entry Rides</li>
               <li>✔ Complete Tech Management</li>
               <li>✔ 1 Website</li>
@@ -67,7 +67,7 @@ export default function PricingSection() {
             <h4>Includes</h4>
             <ul>
               <li>✔ Lifetime App Ownership</li>
-              <li>✔ Android & iOS App Publish</li>
+              <li>✔ Android App Publish</li>
               <li>✔ 70 Gifts, 100 Frames & 20 Entry Rides</li>
               <li>✔ 1 Website</li>
               <li>✔ Logo, Banner & Theme Design</li>
