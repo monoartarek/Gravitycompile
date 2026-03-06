@@ -14,7 +14,7 @@ const GravitySection = () => {
       {/* Content: Image + Description */}
       <div className="gravity-content">
             <div className="gravity-video">
-              <video autoPlay loop muted playsInline>
+              <video controls playsInline>
                 <source src={gravityVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
