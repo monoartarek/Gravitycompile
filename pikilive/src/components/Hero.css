@@ -68,6 +68,7 @@
 
 /* ===== TEXT SIDE ===== */
 .h3d-text {
+  
   flex: 1 1 480px;
   animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -438,6 +439,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .hero-3d-inner {
+    margin-top:40px;
     flex-direction: column;
     align-items: center;
     text-align: center;
