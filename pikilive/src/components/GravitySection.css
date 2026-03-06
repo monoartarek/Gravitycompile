@@ -20,6 +20,36 @@
   align-items: center;
   gap: 20px; /* spacing between image and text */
 }
+.gravity-video{
+  position: relative;
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 800% 800%;
+  animation: rainbowMove 8s linear infinite;
+}
+/* Animation */
+@keyframes rainbowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .gravity-video video {
   width: 70rem;
