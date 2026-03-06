@@ -10,7 +10,8 @@
   font-weight: 700;
   margin-bottom: 30px;
   color: #1a1a1a;
-  padding-bottom:20px;
+  padding-top:40px;
+  padding-bottom:40px;
 }
 
 .gravity-content {
@@ -20,13 +21,11 @@
   gap: 20px; /* spacing between image and text */
 }
 
-.gravity-image img { 
-  height: 25rem;
-  width: 25rem;
+.gravity-video video {
+  width: 70rem;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 
 .gravity-about {

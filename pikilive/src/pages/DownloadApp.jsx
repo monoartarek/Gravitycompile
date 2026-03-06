@@ -4,6 +4,7 @@ import DownloadAppHero from "../components/DownloadAppHero";
 import AppPreview from "../components/AppPreview";
 import DownloadDemo from "../components/DownloadDemo";
 import Features from "../components/Features";
+import GravitySection from "../components/GravitySection";
 
 
 function DownloadApp() {
@@ -14,6 +15,7 @@ function DownloadApp() {
       <Features />
       <AppPreview />
       <DownloadDemo />
+      <GravitySection />
 
 
       <Footer />

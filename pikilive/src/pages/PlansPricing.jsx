@@ -5,12 +5,14 @@ import PricingSection from "../components/PricingSection";
 import GamePricingSection from "../components/GamePricingSection";
 import GamesInApp from "../components/GamesInApp";
 import ResellerSection from "../components/ResellerSection";
+import GravitySection from "../components/GravitySection";
 
 function PlansPricing() {
   return (
     <>
       <Header />
       <PlansPricingHero />
+      <GravitySection />
       <PricingSection />
       <GamePricingSection />
       <GamesInApp />
