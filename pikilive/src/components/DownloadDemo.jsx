@@ -1,5 +1,4 @@
 import "./DownloadDemo.css";
-import demoImg from "../assets/others_image/hero_download.webp";
 import qrImg from "../assets/others_image/Gravity Compile.png";
 
 const DownloadDemo = () => {

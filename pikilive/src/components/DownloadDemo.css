@@ -12,7 +12,7 @@
 }
 
 /* Card */
-.download-card {
+/* .download-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +21,64 @@
   overflow: hidden;
   padding: 40px;
   gap: 30px;
+} */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
+.download-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Your existing background */
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  border-radius: 18px;
+  padding: 40px;
+  gap: 30px;
+  
+  /* Required for the border logic */
+  position: relative;
+  z-index: 1;
+}
+
+.download-card::before {
+  content: "";
+  position: absolute;
+  /* Thin border settings */
+  inset: -1.5px; 
+  padding: 5px; 
+  border-radius: 19.5px; /* Slightly larger than card radius (18 + 1.5) */
+  
+  background: conic-gradient(
+    from var(--angle),
+    #00ff00, /* Green */
+    #ff0000, /* Red */
+    #0000ff, /* Blue */
+    #000000, /* Yellow */
+    #00ff00
+  );
+  
+  /* Fixed Masking for transparency/thinness */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: source-out;
+  mask-composite: exclude;
+          
+  animation: flow-colors 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes flow-colors {
+  to {
+    --angle: 360deg;
+  }
+}
 /* Left content */
 .download-content {
   flex: 1;

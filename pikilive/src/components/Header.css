@@ -54,6 +54,20 @@ a {
 }
 
 /* ===== CENTER ===== */
+/* .nav-center {
+  display: flex;
+  gap: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+} */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .nav-center {
   display: flex;
   gap: 12px;
@@ -61,8 +75,49 @@ a {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 
+.nav-center::before {
+  content: "";
+  position: absolute;
+  /* Reduced inset for a thinner look */
+  inset: -1px; 
+  padding: 1px; /* Thinner border width */
+  border-radius: 999px;
+  
+  background: conic-gradient(
+    from var(--angle),
+    #ffffff, /* Green */
+    #1a0078, /* Red */
+    #0000ff, /* Blue */
+    #ae00a6, /* Yellow */
+    #ffffff
+  );
+  
+  /* Fixed Mask Logic */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  
+  /* Essential: -webkit uses 'source-out', standard uses 'exclude' */
+  -webkit-mask-composite: source-out;
+  mask-composite: exclude;
+          
+  animation: flow-colors 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes flow-colors {
+  to {
+    --angle: 360deg;
+  }
+}
 .navbar.scrolled .nav-center {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -92,6 +147,17 @@ a {
   gap: 12px;
 }
 
+/* .pricing-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.1rem;
+} */
 .pricing-btn {
   display: flex;
   align-items: center;
@@ -102,8 +168,55 @@ a {
   font-weight: 600;
   color: #000;
   font-size: 1.1rem;
+  
+  /* Layout & Border Logic */
+  position: relative;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* Clips the pseudo-element to the button's rounded shape */
+  overflow: hidden; 
 }
 
+/* The animated color layer */
+.pricing-btn::before {
+  content: '';
+  position: absolute;
+  /* We make this much larger than the button so when it rotates, 
+     the colors appear to "pass through" the border area */
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -2;
+  background-image: conic-gradient(
+    #00ff00, /* Green */
+    #ff0000, /* Red */
+    #0000ff, /* Blue */
+    #ffff00, /* Yellow */
+    #00ff00  /* Back to Green */
+  );
+  animation: flow 4s linear infinite;
+}
+
+/* The inner background to cover the center of the button */
+.pricing-btn::after {
+  content: '';
+  position: absolute;
+  inset: 3px; /* This defines your border thickness */
+  background: white;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+@keyframes flow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .arrow-circle {
   width: 30px;
   height: 30px;
@@ -174,16 +287,64 @@ a {
   color: #7c3aed;
 }
 
-.mobile-pricing {
-  margin-top: 20px;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: #fff;
-  font-weight: 600;
+.mobile-pricing{
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 600;
   color: #000;
+  font-size: 1.1rem;
+  
+  /* Layout & Border Logic */
+  position: relative;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* Clips the pseudo-element to the button's rounded shape */
+  overflow: hidden; 
+}
+
+/* The animated color layer */
+.mobile-pricing::before {
+  content: '';
+  position: absolute;
+  /* We make this much larger than the button so when it rotates, 
+     the colors appear to "pass through" the border area */
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -2;
+  background-image: conic-gradient(
+    #00ff00, /* Green */
+    #ff0000, /* Red */
+    #0000ff, /* Blue */
+    #ffff00, /* Yellow */
+    #00ff00  /* Back to Green */
+  );
+  animation: flow 4s linear infinite;
+}
+
+/* The inner background to cover the center of the button */
+.mobile-pricing::after {
+  content: '';
+  position: absolute;
+  inset: 3px; /* This defines your border thickness */
+  background: white;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+@keyframes flow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== RESPONSIVE ===== */
