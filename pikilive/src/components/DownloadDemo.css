@@ -33,7 +33,8 @@
   align-items: center;
   justify-content: space-between;
   /* Your existing background */
-  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  background-image: linear-gradient(135deg, #00093f, #010420d6);
+  /* background-color: rgb(50, 2, 2); */
   border-radius: 18px;
   padding: 40px;
   gap: 30px;
@@ -53,11 +54,11 @@
   
   background: conic-gradient(
     from var(--angle),
-    #00ff00, /* Green */
-    #ff0000, /* Red */
+    #ffffff, /* Green */
+    #ffffff, /* Red */
     #0000ff, /* Blue */
     #000000, /* Yellow */
-    #00ff00
+    #ffffff
   );
   
   /* Fixed Masking for transparency/thinness */

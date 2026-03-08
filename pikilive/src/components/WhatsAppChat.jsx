@@ -3,7 +3,7 @@ import "./WhatsAppChat.css";
 import whatsappIcon from "../assets/others_image/whatsapp.png";
 
 const WhatsAppChat = () => {
-  const phoneNumber = "+8801775215693"; 
+  const phoneNumber = "+96877035634"; 
   const message = "Hello! I want to know more about your service.";
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

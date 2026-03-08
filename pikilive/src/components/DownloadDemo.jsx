@@ -1,5 +1,5 @@
 import "./DownloadDemo.css";
-import qrImg from "../assets/others_image/Gravity Compile.png";
+import qrImg from "../assets/others_image/qrcodePikiLive.jpeg";
 
 const DownloadDemo = () => {
   return (
